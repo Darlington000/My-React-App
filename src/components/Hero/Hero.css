@@ -1,0 +1,60 @@
+/* HERO SECTION */
+.hero {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px 20px;
+  color: #fff;
+
+  /* Dark overlay on top of your image. Change hero.jpg to your image name. */
+  background-color: #1a1445;
+  background-image:
+    linear-gradient(rgba(10, 8, 40, 0.75), rgba(10, 8, 40, 0.75)),
+    url("../../assets/Hero.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-content {
+  max-width: 650px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  margin-bottom: 28px;
+}
+
+.hero-btn {
+  display: inline-block;
+  padding: 14px 36px;
+  background-color: #1976d2;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 50px;
+  transition: background-color 0.2s;
+}
+
+.hero-btn:hover {
+  background-color: #1259a8;
+}
+
+/* Phones */
+@media (max-width: 600px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .hero p {
+    font-size: 1.05rem;
+  }
+}
